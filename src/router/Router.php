@@ -5,9 +5,7 @@ use Aruga\Platform\helpers\ValidateApi;
 
 class Router {
 
-    public static function get($newUri, $callback) {
-
-       
+    public static function get($newUri, $callback) {       
             if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 $uri = $_SERVER['REQUEST_URI'];
                 $uri = explode('/', $uri);
