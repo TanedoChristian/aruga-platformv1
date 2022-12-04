@@ -121,7 +121,7 @@ class Router {
 
     public static function deleteByID($newUri, $callback) {
      
-            if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+            if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
                 $uri = $_SERVER['REQUEST_URI'];
                 $uri = explode('/', $uri);
                 unset($uri[0]);
